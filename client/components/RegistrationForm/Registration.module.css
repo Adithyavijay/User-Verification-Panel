@@ -1,0 +1,52 @@
+.wrapper{
+    height: calc(100vh - 80px);
+   background-color: rgb(44, 166, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+.header{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.wrapper form{
+    display: flex;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    flex-direction: column;
+    gap: 10px;
+    border: 1px;
+    border:  solid white;
+    border-radius: 10px;
+    padding: 50px;
+   background-color: white;
+}
+
+.wrapper form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+
+} 
+.button{
+    padding: 10px 20px;
+    background-color: #ffb199;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+} 
+.button:not(:disabled):hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Add shadow on hover */
+}
+
+.button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}

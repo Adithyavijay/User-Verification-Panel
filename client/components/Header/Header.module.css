@@ -1,0 +1,21 @@
+.header{
+    padding:20px;
+    background-color: black;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-poppins);
+ 
+}
+
+.text{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+} 
+
