@@ -86,7 +86,7 @@ const MobileRegistration: React.FC = () => {
         toast.success('Otp verified successfully') 
         setTimeout(() => {
           router.push('/register/email');
-      }, 1500); 
+      }, 1300); 
       })
       .catch((err: Error) => {
         console.log(err);
@@ -99,7 +99,7 @@ const MobileRegistration: React.FC = () => {
   return (
     <section className={styles.container}>
       <div>
-        <Toaster toastOptions={{ duration: 1500 }} />
+        <Toaster toastOptions={{ duration: 1300 }} />
         <div id="recaptcha-container"></div>
          
           <div className={styles.formContainer}>

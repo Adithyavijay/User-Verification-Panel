@@ -40,7 +40,7 @@ const Pancard: React.FC = () => {
                 toast.success("PAN verified successfully");
                 setTimeout(() => {
                     router.push("/verify/gstin");
-                }, 2000);
+                }, 1200);
             } else {
                 toast.error(response.data.message || "Failed to verify PAN");
             }
@@ -65,7 +65,7 @@ const Pancard: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Toaster toastOptions={{ duration: 2000 }} />
+            <Toaster toastOptions={{ duration: 1200 }} />
             <div className={styles.formContainer}>
                 <h1 className={styles.title}>Pan verfication</h1>
                 <label className={styles.label}>

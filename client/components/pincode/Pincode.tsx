@@ -63,7 +63,7 @@ const PincodeVerification: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Toaster toastOptions={{ duration: 1000 }} />
+            <Toaster toastOptions={{ duration: 1200 }} />
             <div className={styles.formContainer}>
               
                 <label className={styles.label}>

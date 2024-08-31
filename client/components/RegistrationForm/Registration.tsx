@@ -40,7 +40,7 @@ const RegistrationForm: React.FC = () => {
             setIsVerified(true);
             setTimeout(() => {
                 router.push('/register/mobile');
-            }, 1200);
+            }, 1100);
         } catch (error) {
             console.error("Registration failed:", error);
             toast.error("Registration failed. Please try again.");
@@ -51,7 +51,7 @@ const RegistrationForm: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Toaster toastOptions={{ duration: 1200 }} />
+            <Toaster toastOptions={{ duration: 1100 }} />
             <form onSubmit={handleSubmit} className={styles.formElement}>
                 <header className={styles.header}>Registration form</header>
                 <input

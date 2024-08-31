@@ -60,7 +60,7 @@ const BankAccountVerification: React.FC = () => {
                 toast.success("Bank account verified successfully");
                 setTimeout(() => {
                     router.push("/pincode");
-                }, 2000);
+                }, 1200);
             } else {
                 toast.error(
                     response.data.message || "Failed to verify bank account"
@@ -91,7 +91,7 @@ const BankAccountVerification: React.FC = () => {
 
     return (
         <div className={styles.wrapper}>
-            <Toaster toastOptions={{ duration: 2000 }} />
+            <Toaster toastOptions={{ duration: 1200 }} />
             <div className={styles.formContainer}>
                 <h1 className={styles.title}>Bank Account Verification</h1>
                 <label className={styles.label}>Enter your IFSC code</label>
