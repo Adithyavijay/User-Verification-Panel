@@ -24,6 +24,7 @@
     font-size: 0.875rem;
     background-color: greenyellow   ;
     z-index: 100;
+   
   } 
   .active{
     border-color: red;
@@ -43,6 +44,7 @@
     top: 50%;
     left: 102%;
     transform: translateY(-50%);
+   
   }
   .connector.completed {
     background-color: black;
