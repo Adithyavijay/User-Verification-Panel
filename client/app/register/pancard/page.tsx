@@ -6,7 +6,7 @@ import HorizontalTimeline from '@/components/timeline/HorizontalTimeline';
 const pancardRegistrationPage = () => {
   return (
     <div >
-      <HorizontalTimeline currentStep="pan"/>
+      <HorizontalTimeline currentStep="pan" allStepsCompleted={false}/>
       <Pancard/>
     </div>
   )

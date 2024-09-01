@@ -6,7 +6,7 @@
   const GSTverificationPage = () => {
     return (
       <div>
-        <HorizontalTimeline currentStep="gst"/>
+        <HorizontalTimeline currentStep="gst" allStepsCompleted={false}/>
         <GstinVerification/>
       </div>
     )

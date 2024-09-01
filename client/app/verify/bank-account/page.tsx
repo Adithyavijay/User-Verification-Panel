@@ -8,7 +8,7 @@ const page = () => {
   return (
 
     <div>
-      <HorizontalTimeline currentStep="bank"/>
+      <HorizontalTimeline currentStep="bank" allStepsCompleted={false}/>
       <BankAccountVerification/>
     </div>
   )

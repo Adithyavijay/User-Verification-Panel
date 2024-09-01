@@ -11,12 +11,16 @@ interface AddressDetails {
   state: string;
   country: string;
 }
+interface PincodeVerificationProps {
+    onVerificationSuccess : ()=>void
+}
 
-const PincodeVerification: React.FC = () => { 
+const PincodeVerification: React.FC<PincodeVerificationProps> = ({onVerificationSuccess}) => { 
     const [pincode, setPincode] = useState<string>("");
     const [error, setError] = useState<string>("");
     const [loading, setLoading] = useState<boolean>(false);
     const [addressDetails, setAddressDetails] = useState<AddressDetails | null>(null);
+    const [isVerified,setIsVerified]=useState<boolean>(false)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const newPincode = e.target.value;
@@ -43,7 +47,9 @@ const PincodeVerification: React.FC = () => {
                   state: postOffice.State,
                   country: postOffice.Country
               });
+              setIsVerified(true)
               toast.success('Pincode data fetched successfully');
+              onVerificationSuccess();
           } else {
               setError("No details found for this pincode");
               toast.error("Failed to verify pincode");
@@ -85,7 +91,7 @@ const PincodeVerification: React.FC = () => {
                     <button
                         onClick={verifyPincode}
                         className={styles.button}
-                        disabled={loading}
+                        disabled={loading || isVerified}
                     > 
                         {loading ?(<> 
                         fetching data

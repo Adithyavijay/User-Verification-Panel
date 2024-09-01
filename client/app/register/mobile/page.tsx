@@ -6,7 +6,7 @@ import HorizontalTimeline from '@/components/timeline/HorizontalTimeline';
 const MobileRegistrationPage:React.FC = () => {
   return (
     <div>
-      <HorizontalTimeline currentStep="mobile"/>
+      <HorizontalTimeline currentStep="mobile" allStepsCompleted={false}/>
       <MobileRegistration/>
       </div>
   )

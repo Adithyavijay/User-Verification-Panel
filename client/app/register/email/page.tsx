@@ -6,7 +6,7 @@ import HorizontalTimeline from '@/components/timeline/HorizontalTimeline';
 const EmailRegistrationPage : React.FC = () => {
   return ( 
     <>
-    <HorizontalTimeline currentStep="email"/>
+    <HorizontalTimeline currentStep="email" allStepsCompleted={false}/>
     <EmailRegistration/>
     </>
     
