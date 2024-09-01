@@ -1,9 +1,13 @@
 import PincodeVerification from '@/components/pincode/Pincode'
-import React from 'react'
+import React from 'react';
+import HorizontalTimeline from '@/components/timeline/HorizontalTimeline';
 
 const pincode = () => {
   return (
-    <div><PincodeVerification/></div>
+    <div>
+      <HorizontalTimeline currentStep="pincode"/>
+      <PincodeVerification/>
+    </div>
   )
 }
 

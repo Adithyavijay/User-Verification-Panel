@@ -1,0 +1,52 @@
+.timeline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px 0 100px;
+    background-color: rgb(44, 166, 227);
+}
+ .step {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  } 
+
+  .circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #cccdcf;
+    font-size: 0.875rem;
+    background-color: greenyellow   ;
+    z-index: 100;
+  } 
+  .active{
+    border-color: red;
+    color: red;
+  }
+  .circle.completed {
+    background-color: black;
+    border-color: black;
+    color: white;
+  }
+
+  .connector {
+    height: 0.125rem;
+    width: 10rem;
+    background-color: #cccdcf;
+    position: absolute;
+    top: 50%;
+    left: 102%;
+    transform: translateY(-50%);
+  }
+  .connector.completed {
+    background-color: black;
+  }
+  .checkmark {
+    font-size: 0.75rem;
+  } 
